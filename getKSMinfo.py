@@ -6,12 +6,12 @@ import okex.Trade_api as Trade
 import okex.subAccount_api as SubAccount
 import okex.status_api as Status
 import json
-
+import Config
 
 if __name__ == '__main__':
-    api_key = ""
-    secret_key = ""
-    passphrase = ""
+    api_key = Config.API_KEY
+    secret_key = Config.SECRET_KEY
+    passphrase = Config.PASSPHRASE
     # flag是实盘与模拟盘的切换参数 flag is the key parameter which can help you to change between demo and real trading.
     # flag = '1'  # 模拟盘 demo trading
     flag = '0'  # 实盘 real trading

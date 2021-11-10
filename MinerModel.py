@@ -42,7 +42,7 @@ wks = sh.worksheet_by_title('常量')
 
 # 更新价格数据
 wks.update_value('F3', time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()))
-
+print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()))
 wks.update_value('B4', btc_last_price)
 wks.update_value('B5', eth_last_price)
 wks.update_value('B6', zec_last_price)

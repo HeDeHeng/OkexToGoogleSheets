@@ -1,14 +1,7 @@
 #coding:utf-8
 from lxml import etree
-import pygsheets
 import requests
 import json
-import okex.Market_api as Market
-import time
-import Config
-from bs4 import BeautifulSoup
-
-
 
 class F2pool():
     response = ''
